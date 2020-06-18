@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fff;
+  font-family: Arial;
+}
+
+header {
+  background-color: #232f34;
+  color: white;
+  text-align: center;
+  border: solid 5px black;
+}
+
+h1 {
+  text-align: center;
+  cursor: pointer;
+  border-top: solid 5px black;
+  border-left: solid 5px black;
+  border-right: solid 5px black;
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.header {
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+section.box {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+ul {
+  border: solid 5px black;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  font-size: x-large;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.content {
+  max-height: 500px;
+  transition: max-height 0.3s ease;
+}
+
+#box1:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#box2:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#box3:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#box4:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#box5:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#box6:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#box7:checked ~ .content {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  font-size: x-large;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  font-size: x-large;
+}
+
+@media (max-width: 1300px) {
+  .Dashboard {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .Dashboard {
+    grid-template-columns: minmax(300px, 1fr);
+  }
+}
